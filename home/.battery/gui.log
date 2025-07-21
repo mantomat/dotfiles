@@ -1,0 +1,577 @@
+[ update-electron-app ] 
+feedURL
+https://update.electronjs.org/actuallymentor/battery/darwin-arm64/1.2.3
+[ update-electron-app ] 
+requestHeaders
+[object Object]
+Starting tray app
+Get active logo for 100
+Display percentage 100 based on 100
+Found image: /Applications/battery.app/Contents/Resources/battery-active-100-Template.png
+Tray app boot complete
+Triggering boot-time auto-update
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin curl -I https://icanhazip.com &> /dev/null
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin curl -I https://github.com &> /dev/null
+[ update-electron-app ] 
+checking-for-update
+Internet online: true
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin which smc
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin sudo -n /usr/local/bin/smc -k CH0C -r
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin sudo -n /usr/local/bin/smc -k CH0I -r
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin sudo -n /usr/local/bin/smc -k ACLC -r
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin which battery
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin sudo -n /usr/local/bin/smc -k ACLC -w 02
+Is installed? 
+/usr/local/bin/smc
+
+Visudo complete? 
+[object Object]
+Executing ps aux | grep "/usr/local/bin/battery " | wc -l | grep -Eo "\d*"
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery maintain stop
+Found 3 battery related processed to kill
+[ update-electron-app ] 
+update-not-available
+Executing pkill -f "/usr/local/bin/battery.*"
+Updating battery...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery update silent
+Update result: 
+No need to update, offline version number v1.2.7 matches remote version number
+
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery maintain recover
+Executing nohup curl "https://unidentifiedanalytics.web.app/touch/?namespace=battery" > /dev/null 2>&1
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+App initialisation process complete
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery maintain 80
+Force discharge setting: undefined undefined
+Battery status: 
+{"percentage":"83","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"83% (unknown remaining)","daemon_state":"smc charging disabled"}
+enable_battery_limiter exec complete
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"83","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"83% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:20:39 - Battery at 83% ((no remaining), 11.938V, smc charging disabled
+07/21/25-21:20:39 - Your battery is currently being maintained at 80%
+
+Force discharge setting: undefined undefined
+Display percentage 80 based on 83
+Get active logo for 83
+Generate app menu percentage: 83 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing interface update timer
+Battery status: 
+{"percentage":"83","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"83% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"83","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"83% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"81","remaining":"3:31","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"81% (3:31 remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:23:35 - Battery at 81% (3:31 remaining), 11.973V, smc charging disabled
+07/21/25-21:23:35 - Your battery is currently being maintained at 80%
+
+Display percentage 80 based on 81
+Resetting interface timer speed
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Force discharge setting: undefined undefined
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Generate app menu percentage: 81 (discharge disallowed, limited on)
+Get active logo for 81
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"81","remaining":"3:31","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"81% (3:31 remaining)","daemon_state":"smc charging disabled"}
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"81","remaining":"3:35","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"81% (3:35 remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:26:18 - Battery at 81% (3:35 remaining), 11.963V, smc charging disabled
+07/21/25-21:26:18 - Your battery is currently being maintained at 80%
+
+Refreshing interface update timer
+Get active logo for 81
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Force discharge setting: undefined undefined
+Display percentage 80 based on 81
+Generate app menu percentage: 81 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Battery status: 
+{"percentage":"81","remaining":"3:35","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"81% (3:35 remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Battery status: 
+{"percentage":"78","remaining":"2:55","charging":true,"discharging":false,"maintain_percentage":"80","battery_state":"78% (2:55 remaining)","daemon_state":"smc charging enabled"}
+Limiter status message: 
+07/21/25-21:29:31 - Battery at 78% (2:55 remaining), 11.729V, smc charging enabled
+07/21/25-21:29:31 - Your battery is currently being maintained at 80%
+
+Found image: /Applications/battery.app/Contents/Resources/battery-active-75-Template.png
+Generate app menu percentage: 78 (discharge disallowed, limited on)
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Force discharge setting: undefined undefined
+Resetting interface timer speed
+Get active logo for 78
+Display percentage 75 based on 78
+Battery status: 
+{"percentage":"78","remaining":"2:55","charging":true,"discharging":false,"maintain_percentage":"80","battery_state":"78% (2:55 remaining)","daemon_state":"smc charging enabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"76","remaining":"unknown","charging":true,"discharging":false,"maintain_percentage":"80","battery_state":"76% (unknown remaining)","daemon_state":"smc charging enabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:35:43 - Battery at 76% ((no remaining), 12.462V, smc charging enabled
+07/21/25-21:35:43 - Your battery is currently being maintained at 80%
+
+Display percentage 75 based on 76
+Found image: /Applications/battery.app/Contents/Resources/battery-active-75-Template.png
+Resetting interface timer speed
+Generate app menu percentage: 76 (discharge disallowed, limited on)
+Force discharge setting: undefined undefined
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Get active logo for 76
+Refreshing interface update timer
+Battery status: 
+{"percentage":"76","remaining":"unknown","charging":true,"discharging":false,"maintain_percentage":"80","battery_state":"76% (unknown remaining)","daemon_state":"smc charging enabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Force discharge setting: undefined undefined
+Refreshing interface update timer
+Resetting interface timer speed
+Get active logo for 80
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Display percentage 80 based on 80
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Limiter status message: 
+07/21/25-21:45:43 - Battery at 80% (attached; remaining), 12.234V, smc charging disabled
+07/21/25-21:45:43 - Your battery is currently being maintained at 80%
+
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:49:58 - Battery at 80% (attached; remaining), 12.223V, smc charging disabled
+07/21/25-21:49:58 - Your battery is currently being maintained at 80%
+
+Force discharge setting: undefined undefined
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing interface update timer
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Get active logo for 80
+Display percentage 80 based on 80
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-21:57:47 - Battery at 80% (attached; remaining), 12.22V, smc charging disabled
+07/21/25-21:57:47 - Your battery is currently being maintained at 80%
+
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Force discharge setting: undefined undefined
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Refreshing interface update timer
+Display percentage 80 based on 80
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Get active logo for 80
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-22:07:48 - Battery at 80% (attached; remaining), 12.22V, smc charging disabled
+07/21/25-22:07:48 - Your battery is currently being maintained at 80%
+
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Display percentage 80 based on 80
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Force discharge setting: undefined undefined
+Get active logo for 80
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Get active logo for 80
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Display percentage 80 based on 80
+Limiter status message: 
+07/21/25-22:11:44 - Battery at 80% (attached; remaining), 12.22V, smc charging disabled
+07/21/25-22:11:44 - Your battery is currently being maintained at 80%
+
+Force discharge setting: undefined undefined
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Force discharge setting: undefined undefined
+Display percentage 80 based on 80
+Refreshing interface update timer
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Resetting interface timer speed
+Get active logo for 80
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Limiter status message: 
+07/21/25-22:21:44 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:21:44 - Your battery is currently being maintained at 80%
+
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-22:31:44 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:31:44 - Your battery is currently being maintained at 80%
+
+Force discharge setting: undefined undefined
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Display percentage 80 based on 80
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Get active logo for 80
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-22:35:17 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:35:17 - Your battery is currently being maintained at 80%
+
+Display percentage 80 based on 80
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Get active logo for 80
+Force discharge setting: undefined undefined
+Refreshing interface update timer
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Force discharge setting: undefined undefined
+Display percentage 80 based on 80
+Limiter status message: 
+07/21/25-22:45:17 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:45:17 - Your battery is currently being maintained at 80%
+
+Get active logo for 80
+Refreshing interface update timer
+Resetting interface timer speed
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Force discharge setting: undefined undefined
+Display percentage 80 based on 80
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing interface update timer
+Limiter status message: 
+07/21/25-22:48:54 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:48:54 - Your battery is currently being maintained at 80%
+
+Get active logo for 80
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-22:51:41 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-22:51:41 - Your battery is currently being maintained at 80%
+
+Resetting interface timer speed
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Get active logo for 80
+Display percentage 80 based on 80
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Force discharge setting: undefined undefined
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Refreshing interface update timer
+Display percentage 80 based on 80
+Limiter status message: 
+07/21/25-23:01:41 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-23:01:41 - Your battery is currently being maintained at 80%
+
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Force discharge setting: undefined undefined
+Get active logo for 80
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-23:11:41 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-23:11:41 - Your battery is currently being maintained at 80%
+
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Refreshing interface update timer
+Display percentage 80 based on 80
+Force discharge setting: undefined undefined
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Resetting interface timer speed
+Get active logo for 80
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Force discharge setting: undefined undefined
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing interface update timer
+Resetting interface timer speed
+Get active logo for 80
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Limiter status message: 
+07/21/25-23:21:41 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-23:21:41 - Your battery is currently being maintained at 80%
+
+Display percentage 80 based on 80
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-23:31:42 - Battery at 80% (attached; remaining), 12.218V, smc charging disabled
+07/21/25-23:31:42 - Your battery is currently being maintained at 80%
+
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Display percentage 80 based on 80
+Get active logo for 80
+Force discharge setting: undefined undefined
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-23:41:42 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/21/25-23:41:42 - Your battery is currently being maintained at 80%
+
+Get active logo for 80
+Force discharge setting: undefined undefined
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Display percentage 80 based on 80
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Resetting interface timer speed
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Refreshing interface update timer
+Setting interface refresh speed to 10 minutes
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Refreshing tray icon...
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/21/25-23:51:42 - Battery at 80% (attached; remaining), 12.218V, smc charging disabled
+07/21/25-23:51:42 - Your battery is currently being maintained at 80%
+
+Resetting interface timer speed
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Display percentage 80 based on 80
+Get active logo for 80
+Force discharge setting: undefined undefined
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes
+[ update-electron-app ] 
+checking-for-update
+[ update-electron-app ] 
+update-not-available
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Refreshing tray icon...
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status
+Limiter status message: 
+07/22/25-00:01:42 - Battery at 80% (attached; remaining), 12.219V, smc charging disabled
+07/22/25-00:01:42 - Your battery is currently being maintained at 80%
+
+Found image: /Applications/battery.app/Contents/Resources/battery-active-80-Template.png
+Resetting interface timer speed
+Get active logo for 80
+Display percentage 80 based on 80
+Force discharge setting: undefined undefined
+Refreshing interface update timer
+Executing PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin battery status_csv
+Generate app menu percentage: 80 (discharge disallowed, limited on)
+Battery status: 
+{"percentage":"80","remaining":"unknown","charging":false,"discharging":false,"maintain_percentage":"80","battery_state":"80% (unknown remaining)","daemon_state":"smc charging disabled"}
+Setting interface refresh speed to 10 minutes

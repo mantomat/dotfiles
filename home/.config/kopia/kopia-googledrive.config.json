@@ -1,0 +1,22 @@
+{
+  "storage": {
+    "type": "rclone",
+    "config": {
+      "remotePath": "drive_documents:/",
+      "rcloneExe": "/run/current-system/sw/bin/rclone",
+      "atomicWrites": false,
+      "dirShards": null
+    }
+  },
+  "caching": {
+    "cacheDirectory": "/Users/mantomat/kopia/cache/googledrive",
+    "maxCacheSize": 5242880000,
+    "maxMetadataCacheSize": 5242880000,
+    "maxListCacheDuration": 30
+  },
+  "hostname": "mantomat-mba",
+  "username": "mantomat",
+  "description": "documents_googledrive",
+  "enableActions": true,
+  "formatBlobCacheDuration": 900000000000
+}
