@@ -1,12 +1,12 @@
 font-family = "JetBrainsMono Nerd Font"
 font-thicken = true
 
-command = /opt/homebrew/bin/tmux new-session -A -s main
+command = /run/current-system/sw/bin/tmux new-session -A -s main
 
 window-colorspace = "display-p3"
 
 confirm-close-surface = false
 
-background-opacity = 0
+# background-opacity = 0
 background-blur = true
 macos-titlebar-style = hidden

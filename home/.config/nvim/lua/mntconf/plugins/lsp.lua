@@ -29,12 +29,17 @@ return {
             local capabilities = require("blink.cmp").get_lsp_capabilities()
 
             -- Automatically setup Mason-installed LSPs with LSPConfig
-            mason_lspconfig.setup_handlers({
-                function(server_name) -- Default handler
-                    lspconfig[server_name].setup({
-                        capabilities = capabilities,
-                    })
-                end,
+            mason_lspconfig.setup({
+                -- Ensure mason-lspconfig is ready to auto-configure
+                ensure_installed = {},
+                automatic_enable = true,
+                handlers = {
+                    function(server_name)
+                        lspconfig[server_name].setup({
+                            capabilities = capabilities,
+                        })
+                    end,
+                },
             })
 
             vim.api.nvim_create_autocmd("LspAttach", {
@@ -43,7 +48,9 @@ return {
                     require("mntconf.keymaps").lsp()
                     -- TODO this was difficult to put in the keymaps (I could do it one day)
                     local client = vim.lsp.get_client_by_id(event.data.client_id)
-                    if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+                    if
+                        client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint, event.buf)
+                    then
                         vim.keymap.set("n", "<leader>ch", function()
                             vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
                         end, { buffer = event.buf, desc = "Toggle Inlay [H]ints" })
