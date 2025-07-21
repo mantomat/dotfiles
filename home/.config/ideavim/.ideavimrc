@@ -1,0 +1,4 @@
+set clipboard=unnamedplus
+set clipboard^=ideaput
+
+set relativenumber

@@ -1,0 +1,5 @@
+require("mntvim.keymaps")
+require("mntvim.globals")
+require("mntvim.opts")
+require("mntvim.lazy")
+require("mntvim.autocmds")

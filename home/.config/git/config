@@ -1,0 +1,5 @@
+[user]
+	email = mattemant@gmail.com
+	name = Matteo Mantoan
+[credential]
+	helper = osxkeychain
