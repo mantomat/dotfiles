@@ -7,6 +7,6 @@ window-colorspace = "display-p3"
 
 confirm-close-surface = false
 
-# background-opacity = 0
-background-blur = true
 macos-titlebar-style = hidden
+
+theme = Afterglow
