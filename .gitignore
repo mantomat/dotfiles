@@ -1,2 +1,5 @@
 .DS_Store
-secret/
+
+home/.battery/battery.log
+home/.battery/battery.pid
+home/.battery/gui.log

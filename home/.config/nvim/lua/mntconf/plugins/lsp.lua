@@ -3,7 +3,9 @@ return {
         dependencies = {
             {
                 "williamboman/mason.nvim",
-                opts = {},
+                opts = {
+                    log_level = vim.log.levels.DEBUG
+                },
             },
             {
                 "williamboman/mason-lspconfig.nvim",
