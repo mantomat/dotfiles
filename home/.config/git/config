@@ -3,3 +3,5 @@
 	name = Matteo Mantoan
 [credential]
 	helper = osxkeychain
+[push]
+	autoSetupRemote = true
